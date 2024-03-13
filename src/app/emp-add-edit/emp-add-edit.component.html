@@ -1,0 +1,58 @@
+<div mat-dialog-title>
+    <h1>Employee Form</h1>
+</div>
+
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+
+<div mat-dialog-content class="content">
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Име</mat-label> 
+            <input matInput type="text" placeholder="Ex. Иван" formControlName="firstName" required pattern="[a-zA-Z ]*"> 
+            <mat-error *ngIf="empForm.controls['firstName'].hasError('pattern')">
+              Only letters and spaces are allowed.
+            </mat-error>           
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Фамилия</mat-label>
+            <input matInput type="text" placeholder="Ex. Иванов" formControlName="lastName" required pattern="[a-zA-Z ]*">
+            <mat-error *ngIf="empForm.controls['lastName'].hasError('pattern')">
+              Only letters and spaces are allowed.
+            </mat-error>
+          </mat-form-field>
+    </div>
+
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Професия</mat-label>
+            <input matInput type="text" placeholder="Ex. Frontend Developer" formControlName="job" required pattern="[a-zA-Z ]*">
+            <mat-error *ngIf="empForm.controls['job'].hasError('pattern')">
+              Only letters and spaces are allowed.
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Изберете пол</mat-label>
+            <mat-select formControlName="gender" disableRipple required>
+              <mat-option class="genderMenu" value="male">Мъж</mat-option>
+              <mat-option class="genderMenu" value="female">Жена</mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Дата на раждане</mat-label>
+            <input matInput type="number" [matDatepicker]="picker" formControlName="dob">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+          
+    </div>
+</div>
+<div mat-dialog-actions class="actionButtons">
+    <button mat-raised-button color="warn" type="button" [mat-dialog-close]="false">Close</button>
+    <button mat-raised-button color="primary" type="submit">{{data ? 'Update': "Save"}}</button>
+    <!-- <button mat-raised-button color="warn" type="button">Close</button> -->
+</div>
+</form>

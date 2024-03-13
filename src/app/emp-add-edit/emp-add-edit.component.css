@@ -1,0 +1,30 @@
+.content{
+    padding-top: 10px !important;
+}
+
+.row{
+    display: flex;
+    gap: 10px;
+}
+
+.genderMenu:hover{
+    color: #fff !important;
+    background-color: #3f51b5 !important;
+}
+
+mat-form-field{
+    width: 100%;
+}
+
+.actionButtons{
+    padding: 0px 25px 20px;
+}
+
+button{
+    flex: 1;
+    border-radius: 60px;
+}
+
+.row{
+    margin-bottom: 20px;
+}

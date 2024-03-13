@@ -1,0 +1,70 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .btn{
+    border-radius: 60px;
+  }
+  
+  .btn:hover {
+    background-color: #de3f33;
+  }
+
+  .main-body{
+    max-width: 1248px;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+
+  mat-form-field{
+    width: 100%;
+    padding-top: 20px;
+  }
+  
+  .footer {
+    background-color: #3f51b5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .social-media {
+    margin-bottom: 10px;
+  }
+
+  .social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+  /*social media icon hover*/
+  .social-media a:hover {
+    color: #de3f33;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+
+  @media (max-width: 1024px){
+   .header{
+    width: 100%;
+   }
+   .filter{
+    width: 100%;
+   }
+  }
+
+  @media (min-width: 1024px){
+    .header{
+     width: 100%;
+    }
+    .filter{
+     width: 100%;
+    }
+   }

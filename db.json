@@ -1,0 +1,111 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "firstName": "Agop",
+      "lastName": "Artyunyan",
+      "job": "Frontend Developer",
+      "gender": "male",
+      "dob": "2000-04-20T21:00:00.000Z",
+      "id": "7ace"
+    },
+    {
+      "id": "1bdb",
+      "firstName": "Maria",
+      "lastName": "Petrova",
+      "job": "QA",
+      "gender": "female",
+      "dob": "1974-03-21T22:00:00.000Z"
+    },
+    {
+      "id": "5130",
+      "firstName": "Jhon",
+      "lastName": "Doe",
+      "job": "Backend Developer",
+      "gender": "male",
+      "dob": "1996-11-27T22:00:00.000Z"
+    },
+    {
+      "id": "f1c1",
+      "firstName": "Ivan",
+      "lastName": "Ivanov",
+      "job": "Project Manager",
+      "gender": "male",
+      "dob": "1990-07-05T21:00:00.000Z"
+    },
+    {
+      "id": "0270",
+      "firstName": "Gabriela",
+      "lastName": "Georgieva",
+      "job": "Web Designer",
+      "gender": "female",
+      "dob": "2002-08-09T21:00:00.000Z"
+    },
+    {
+      "id": "0159",
+      "firstName": "Radoslav",
+      "lastName": "Ignatov",
+      "job": "Java Developer",
+      "gender": "male",
+      "dob": "1982-11-21T22:00:00.000Z"
+    },
+    {
+      "id": "fecb",
+      "firstName": "Simona",
+      "lastName": "Ilieva",
+      "job": "HR",
+      "gender": "female",
+      "dob": "1995-09-26T22:00:00.000Z"
+    },
+    {
+      "id": "bdaf",
+      "firstName": "Bill",
+      "lastName": "Gates",
+      "job": "CEO",
+      "gender": "male",
+      "dob": "1960-10-24T22:00:00.000Z"
+    },
+    {
+      "id": "b15d",
+      "firstName": "David",
+      "lastName": "Smith",
+      "job": "JavaScript Developer",
+      "gender": "male",
+      "dob": "1992-01-19T22:00:00.000Z"
+    },
+    {
+      "firstName": "Mike",
+      "lastName": "Peterson",
+      "job": "PHP Developer",
+      "gender": "male",
+      "dob": "1977-11-23T22:00:00.000Z",
+      "id": "4adb"
+    }
+  ]
+}
